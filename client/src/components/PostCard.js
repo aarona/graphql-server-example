@@ -4,10 +4,10 @@ import { Card, Icon, Label, Image, Button } from 'semantic-ui-react'
 import moment from 'moment'
 
 export default function PostCard({ post: { body, createdAt, id, username, likeCount, commentCount, likes }}) {
-  function likePost() {
+  const likePost = () => {
     console.log('Like post!!')
   }
-  function commentOnPost() {
+  const commentOnPost = () => {
     console.log('Comment on post!!')
   }
   return (
